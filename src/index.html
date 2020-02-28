@@ -1,0 +1,169 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title"class="text-center">Software Developer Survery Form</h1>
+    <p id="description" class="description text-center">Thank you for giving your time to participate in my survey</p> 
+    </header> 
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label"
+             for="name">Name </label>
+      <input
+             type="text"
+             name="name"
+             id="name"
+             class="form-control"
+             placeholder="Enter your name" required />
+    </div> 
+    <div class="form-group">
+      <label id="email-label"
+             for="email"> Email</label> 
+      <input 
+            type="email"
+            name="email"
+             id="email"
+             class="form control"
+             placeholder="Enter your Email"
+             required
+             /> 
+    </div> 
+  <div class="form-group"> 
+  <label id="number-label" for="number"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>Which option best describes your current role?</p>  <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Full Time Learner</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p>Would you recommend anyone to learn a coding language</p> 
+ <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"
+        />Not sure</label
+      >
+    </div>
+    <p> Have you heard of any of these coding languages?</p>
+    </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="Python">Python</option>
+        <option value="Swift">Swift</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Ruby">Ruby</option>
+        <option
+                value="C">C</option> 
+        <option
+                value="SQL">SQL</option>
+        <option value="PHP">PHP</option>
+        <option 
+                value="other">Other </option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p> Which coding language are you interested in learning/improve in? </p>  <span class="clue">(Check all that apply)</span>
+      </p>
+<label>
+  <input
+         name="prefer"
+         value="Python"
+         type="checkbox"
+         class="input-checkbox"/>Python</label>
+<label>
+  <input 
+         name="prefer"
+         value="Ruby"
+         type="checkbox"
+         class="input-checkbox"/>Ruby</label>
+      <label>
+  <input
+         name="prefer"
+      value="JavaScript"
+         type="checkbox"
+         class="input-checkbox"/>JavaScript</label>
+<label>
+  <input 
+         name="prefer"
+         value="Swift"
+         type="checkbox"
+         class="input-checkbox"/>Swift</label>
+<label>
+  <input
+         name="prefer"
+         value="C"
+         type="checkbox"
+         class="input-checkbox"/>C</label>
+<label>
+  <input 
+         name="prefer"
+         value="PHP"
+         type="checkbox"
+         class="input-checkbox"/>PHP</label>
+      <label>
+  <input
+         name="prefer"
+      value="SQL"
+         type="checkbox"
+         class="input-checkbox"/>SQL</label>
+<label>
+  <input 
+         name="prefer"
+         value="Other"
+         type="checkbox"
+         class="input-checkbox"/>Other</label>
+</div> 
+ <p>Any comments about why coding interests you? </p>
+ <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+
+   
